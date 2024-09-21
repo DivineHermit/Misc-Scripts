@@ -5,10 +5,17 @@ alias dps="docker ps"
 alias dpsa="docker ps -a"
 
 # Custom Commands:
-alias media="cd /media/lonelyronin/"
-alias update="sudo apt update && sudo apt -y upgrade && sudo apt autoremove && echo -e '\n\nFinished updating packages!'"
+alias update="sudo apt update && sudo apt -y upgrade && sudo apt autoremove -y && echo -e '\n\nFinished updating packages!'"
 alias sd="shutdown 'now'"
 alias sdr="shutdown 'now' -r"
+
+# Locations
+alias media="cd /media/$USER/"
+alias docs="cd ~/Documents/"
+alias dls="cd ~/Downloads/"
+alias music="cd ~/Music/"
+alias pics="cd ~/Pictures/"
+alias vids="cd ~/Videos/"
 
 # Scripts:
 alias addext="python3 ~/.bash_scripts/addext.py"
