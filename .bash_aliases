@@ -9,7 +9,7 @@ alias update="sudo apt update && sudo apt -y upgrade && sudo apt autoremove -y &
 alias sd="shutdown 'now'"
 alias sdr="shutdown 'now' -r"
 
-# Locations
+# Locations:
 alias media="cd /media/$USER/"
 alias docs="cd ~/Documents/"
 alias dls="cd ~/Downloads/"
