@@ -18,7 +18,7 @@ alias hgrep="history | grep"                                # Search shell comma
 alias ll="ls -al --color=auto"                              # List all files with details
 alias lt="ls -ltr"                                          # List files sorted by modification date
 alias mem="free -h"                                         # Summarize memory usage
-alias please="sudo !!"                                      # Run last command with sudo
+alias please="sudo $(fc -ln -1)"                            # Run last command with sudo (This isn't working correctly)
 alias ports="sudo ss -tulanp"                               # Show all open ports
 alias psg="ps aux | grep -v grep | grep -i"                 # Search processes by keyword
 alias reload="source ~/.bashrc"                             # Reload shell configuration and aliases
@@ -30,7 +30,7 @@ alias topcpu="ps -eo pid,cmd,%mem,%cpu --sort=-%cpu | head" # List CPU intensive
 alias topmem="ps -eo pid,cmd,%mem,%cpu --sort=-%mem | head" # List memory intensive processes
 alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt clean && echo -e '\n\nFinished updating packages!'" # Run package updates
 
-ipa() {ip -4 a show "$1" | grep -oP '(?<=inet\s)\d+(\.\d+){3}';}    # Show interface IP address
+ipa() {ip -4 a | grep -oP '(?<=inet\s)\d+(\.\d+){3}';}      # Show interface IP address
 mkd() {mkdir -p "$1" && cd "$1";}                           # Make a directory and enter it
 
 
