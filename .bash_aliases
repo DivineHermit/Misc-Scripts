@@ -40,14 +40,3 @@ alias chown="chown --preserve-root"                         # Protect the root d
 alias chmod="chmod --preserve-root"                         # Protect the root directory from permission changes
 alias grep="grep --color=auto -i"                           # Case insensitive grep with colored output
 alias rm="rm -i"                                            # Prompt before deleting files
-
-
-# Scripts:
-alias addext="python3 ~/.bash_scripts/addext.py"            # Run custom script to change/add file extensions
-
-
-# Docker related aliases:
-alias docstop="echo 'Stopping docker containers, please hold on...' && docker stop kali nginx ubuntu && echo 'Finished, Docker containers stopped!'"
-alias docstart="echo 'Starting Docker containers, please hold on...' && docker start kali nginx ubuntu && echo 'Containers started!' && docker ps"
-alias dps="docker ps"
-alias dpsa="docker ps -a"
