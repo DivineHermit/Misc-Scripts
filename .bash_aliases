@@ -18,6 +18,7 @@ alias hgrep="history | grep"                                # Search shell comma
 alias ll="ls -al --color=auto"                              # List all files with details
 alias lt="ls -ltr"                                          # List files sorted by modification date
 alias mem="free -h"                                         # Summarize memory usage
+alias open="xdg-open"                                       # Open files or directories with there default program
 alias ports="sudo ss -tulanp"                               # Show all open ports
 alias psg="ps aux | grep -v grep | grep -i"                 # Search processes by keyword
 alias reload="source ~/.bashrc"                             # Reload shell configuration and aliases
