@@ -11,11 +11,12 @@ alias vids="cd ~/Videos/"                                   # Users 'Videos' fol
 
 
 # Custom Commands:
-alias cpv="rsync -ah --info-progress2"                      # Copy files with progress indicator
+alias cpv="rsync -ah --progress"                            # Copy files with progress indicator
 alias du="du -ch --max-depth=1"                             # Summarize disk usage by directory
 alias f="find . -type f -name"                              # Search for files
 alias hgrep="history | grep"                                # Search shell command history
 alias ll="ls -al --color=auto"                              # List all files with details
+alias lss="ls -alhSr"                                       # List all files with readable file size sorted by size smallest to largest
 alias lt="ls -ltr"                                          # List files sorted by modification date
 alias mem="free -h"                                         # Summarize memory usage
 alias open="xdg-open"                                       # Open files or directories with there default program
